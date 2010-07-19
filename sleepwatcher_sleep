@@ -1,0 +1,4 @@
+#!/bin/bash
+
+osascript -e 'tell application "Finder" to quit application "Rivet"';
+osascript -e 'tell application "Finder" to eject {"Ironforge Backup", "Locals Backup"}';

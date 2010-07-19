@@ -1,0 +1,52 @@
+## sleepwatcher_config
+
+My configuration (LaunchDaemon plist file) and scripts for [Sleepwalker](http://osx.iusethis.com/app/sleepwatcher) by [Bernhard Baehr](http://www.bernhard-baehr.de/).
+
+Rather basic, does what I want without any extras.
+
+Sleepwatcher can be installed via MacPorts, BTW:
+
+    sudo port install sleepwatcher
+
+
+### Wake-up script (`sleepwatcher_wake`)
+
+* Mounts the volumes on my external USB drive
+* Starts Rivet.app
+
+
+### Sleep script (`sleepwatcher_sleep`)
+
+* Unmounts the volumes on my external USB drive
+* Stops Rivet.app
+
+
+### Instructions
+
+    sudo launchctl load de.bernhard-baehr.sleepwatcher.plist
+
+and
+
+    sudo launchctl unload de.bernhard-baehr.sleepwatcher.plist
+
+
+### Acknowledgements
+
+The disk mount/unmount part of the scripts was looted from [a MacOSXHints tip](http://www.macosxhints.com/article.php?story=20080329201951648).
+
+
+### License
+
+               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                       Version 2, December 2004
+
+    Copyright (C) 2004 Sam Hocevar
+     14 rue de Plaisance, 75014 Paris, France
+    Everyone is permitted to copy and distribute verbatim or modified
+    copies of this license document, and changing it is allowed as long
+    as the name is changed.
+
+               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+      TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+     0. You just DO WHAT THE FUCK YOU WANT TO.

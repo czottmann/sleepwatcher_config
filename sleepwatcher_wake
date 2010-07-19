@@ -1,0 +1,4 @@
+#!/bin/bash
+
+osascript -e 'tell application "Finder" to run application "Rivet"';
+/usr/sbin/diskutil list | grep -e ' \+[0-9]\+: \+[^ ]\+ [^ ]\+' | sed 's/.*\(disk[1-9].*\)/\1/' | grep -v ":" | xargs -I{} /usr/sbin/diskutil mount {};

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>de.bernhard-baehr.sleepwatcher</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/local/sbin/sleepwatcher</string>
+		<string>-V</string>
+		<string>-s /Users/Carlo/Code/sleepwatcher_config/sleepwatcher_sleep</string>
+		<string>-w /Users/Carlo/Code/sleepwatcher_config/sleepwatcher_wake</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+</dict>
+</plist>
